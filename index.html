@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,90 +8,108 @@
     <link rel="shortcut icon" href="imagens/restaurant.png" type="image/x-icon">
     <style>
         @font-face {
-            font-family:'Poppins' ;
-            src: url(fontes/Poppins-Medium.ttf);}
+            font-family: 'Poppins';
+            src: url(fontes/Poppins-Medium.ttf);
+        }
+
         @font-face {
-            font-family: 'Quicksand'; 
-            src: url(fontes/Quicksand-VariableFont_wght.ttf);}
+            font-family: 'Quicksand';
+            src: url(fontes/Quicksand-VariableFont_wght.ttf);
+        }
+
         @font-face {
             font-family: 'Raleway';
-            src: url(fontes/Raleway-VariableFont_wght.ttf); }
-        
-        *{
+            src: url(fontes/Raleway-VariableFont_wght.ttf);
+        }
+
+        * {
             padding: 0px;
             margin: 0px;
         }
-        :root{
-            --cor1:#4B2E2B;
-            --cor2:#F5F5DC;
-            --cor3:#C5A880;
-            --cor4:#333333;
 
-            --fontetitulo:'Poppins';
-            --fontetitulosmenores:'Quicksand';
-            --fonteconteudo:'Raleway';
+        :root {
+            --cor1: #4B2E2B;
+            --cor2: #F5F5DC;
+            --cor3: #C5A880;
+            --cor4: #333333;
+
+            --fontetitulo: 'Poppins';
+            --fontetitulosmenores: 'Quicksand';
+            --fonteconteudo: 'Raleway';
         }
-        body{
+
+        body {
             background-color: var(--cor3);
         }
-        header{
+
+        header {
             padding: 20px;
             background-color: var(--cor4);
             min-width: 320px;
         }
-        header h1{
+
+        header h1 {
             font-family: var(--fontetitulo);
             text-align: center;
             color: white;
         }
+
         header p {
             text-align: center;
             min-width: 320px;
             display: block;
             margin: auto;
         }
-        p{
+
+        p {
             font-family: var(--fonteconteudo);
             font-weight: 600;
             color: white
         }
-        main{
+
+        main {
             background-color: white;
             padding: 20px;
             margin: 5px;
             border-radius: 10px;
         }
-        h2{
+
+        h2 {
             font-family: var(--fontetitulo);
             padding: 1px;
             text-align: center;
             padding-bottom: 20px;
         }
-        footer{
+
+        footer {
             background-color: var(--cor4);
             color: white;
         }
-        img{
+
+        img {
             position: relative;
             width: 300px;
             border-radius: 30px;
             display: block;
             margin-bottom: 10px;
         }
-        .conteudo p{
+
+        .conteudo p {
             display: none;
             min-width: 320px;
         }
-        .conteudo:hover{
+
+        .conteudo:hover {
             width: 99%;
             background-color: var(--cor3);
             border-radius: 30px;
-            transition:  .6s;
+            transition: .6s;
             height: 98%;
             position: relative;
             left: -2.8%;
         }
-        .conteudo:hover p{
+
+        .conteudo:hover p {
             display: block;
             position: relative;
 
@@ -98,98 +117,222 @@
             min-width: 320px;
 
         }
-        #entrada{
+
+        #entrada {
             height: 10%;
         }
-        .conteudo{
+
+        .conteudo {
             height: 450px;
             padding: 10px;
 
         }
-        #contato{
+
+        #contato {
             padding: 20px;
         }
-        
-        iframe{
+
+        iframe {
             border-radius: 20px;
         }
-        h3{
+
+        h3 {
             font-family: var(--fonteconteudo);
             text-align: center;
         }
-        #localizacao{
+
+        #localizacao {
             color: var(--cor4);
         }
-        h4{
+
+        .conteudo h4 {
+            font-family: var(--fontetitulosmenores);
+            text-align: center;
+            color: white;
+        }
+
+        h4 {
             font-family: var(--fontetitulosmenores);
             text-align: center;
         }
-        li{
+
+        li {
             font-family: var(--fonteconteudo);
         }
-        ul{
+
+        ul {
+            padding: 10px;
+        }
+
+        .conteudo:hover h3 {
+            color: white;
+            display: block;
+            font-size: 1.5em;
+        }
+
+        .conteudo h3 {
+            display: none;
+        }
+
+        .conteudo ul {
+            display: none;
+        }
+
+        .conteudo:hover ul {
+            display: block;
+            font-weight: bold;
+            color: white;
+            font-family: var(--fonteconteudo);
+        }
+
+        #horario {
+            padding: 20px;
+        }
+
+        footer h1 {
+            text-align: center;
+            color: white;
+            font-family: var(--fonteconteudo);
+        }
+
+        footer:hover h1 {
+            color: var(--cor2);
+            transition: 0.5s;
+        }
+
+        footer img {
+            width: 250px;
+            height: 200px;
+            padding-left: 10px;
+        }
+        #footerdiv{
+            height: 200px;
+        }
+        #footerdiv:hover{
+            height: 70vh;
+        }
+        footer:hover img{
+            width: 350px;
+            height: 350px;
+            transition: .5s;
+        }
+        footer p{
+            display: none;
+        }
+        footer:hover p {
+            display: block;
+            background-color:#333333b0;
+            font-family: var(--fonteconteudo);
+            border-radius: 20px;
+            width: 300px;
+            position: relative;
+            left: 5%;
+            top: -75%;
             padding: 10px;
         }
     </style>
 </head>
+
 <body>
-   <header>
+    <header>
         <h1>La Tavola</h1>
-        <p>Sabores autênticos, ingredientes frescos e uma experiência inesquecível. Descubra o melhor da gastronomia em um ambiente elegante e acolhedor</p>
+        <p>Sabores autênticos, ingredientes frescos e uma experiência inesquecível. Descubra o melhor da gastronomia em
+            um ambiente elegante e acolhedor</p>
         <nav>
 
         </nav>
-   </header>
-   <main>
+    </header>
+    <main>
         <h2>Conheça nosso Cardápio</h2>
 
-            <div class="menu" id="entrada">
-                <div class="conteudo">
-                    <img src="imagens/jose-hernandez-DgWOKBVuMTQ-unsplash.jpg" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In tenetur omnis ut repellat quas optio reiciendis fuga voluptatibus ea ullam, distinctio quo expedita debitis esse vel, vitae rerum, nisi repudiandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odit totam saepe enim delectus et tenetur consequatur quaerat, facilis quia ut qui animi debitis architecto beatae autem temporibus facere! Soluta. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur dolorum sed quaerat dolor, alias animi dolorem incidunt fugiat! Quas illo ut rerum explicabo praesentium nostrum? Consequatur nobis neque debitis expedita!</p>
-                </div>
-            </div>
-            <div class="menu" id="principal">
-                <div class="conteudo">
-                    <img src="imagens/keriliwi-cnlniMp2ww4-unsplash.jpg" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In tenetur omnis ut repellat quas optio reiciendis fuga voluptatibus ea ullam, distinctio quo expedita debitis esse vel, vitae rerum, nisi repudiandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odit totam saepe enim delectus et tenetur consequatur quaerat, facilis quia ut qui animi debitis architecto beatae autem temporibus facere! Soluta. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur dolorum sed quaerat dolor, alias animi dolorem incidunt fugiat! Quas illo ut rerum explicabo praesentium nostrum? Consequatur nobis neque debitis expedita!</p>
-                </div>
-            </div>
-            <div class="menu" id="sobremesa">
-                <div class="conteudo">
-                    <img src="imagens/pushpak-dsilva-2UeBOL7UD34-unsplash.jpg" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In tenetur omnis ut repellat quas optio reiciendis fuga voluptatibus ea ullam, distinctio quo expedita debitis esse vel, vitae rerum, nisi repudiandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odit totam saepe enim delectus et tenetur consequatur quaerat, facilis quia ut qui animi debitis architecto beatae autem temporibus facere! Soluta. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur dolorum sed quaerat dolor, alias animi dolorem incidunt fugiat! Quas illo ut rerum explicabo praesentium nostrum? Consequatur nobis neque debitis expedita!</p>
-                </div>
-            </div>
-            <div class="menu" id="bebida">
-                <div class="conteudo">
-                    <img src="imagens/no-revisions-gA81ZTsql68-unsplash.jpg" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In tenetur omnis ut repellat quas optio reiciendis fuga voluptatibus ea ullam, distinctio quo expedita debitis esse vel, vitae rerum, nisi repudiandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odit totam saepe enim delectus et tenetur consequatur quaerat, facilis quia ut qui animi debitis architecto beatae autem temporibus facere! Soluta. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur dolorum sed quaerat dolor, alias animi dolorem incidunt fugiat! Quas illo ut rerum explicabo praesentium nostrum? Consequatur nobis neque debitis expedita!</p>
-                </div>
-            </div>
-            <h2 id="contato">Contato / Localização</h2>
-
-            <h3>
-                📍Endereço
-                Rua Gastronômica, 123 — Bairro Gourmet, São Paulo — SP</h3>
-                
-                <h4>Reservas</h4>
-                <p id="localizacao">
-                    (11) 98765-4321 <br>
-                    contato@latavola.com.br
-                </p>
-                
-                <h3>Horário de Funcionamento</h3>
+        <div class="menu" id="entrada">
+            <div class="conteudo">
+                <img src="imagens/jose-hernandez-DgWOKBVuMTQ-unsplash.jpg" alt="">
+                <h3>Um convite ao sabor</h3>
+                <p>
+                    No La Tavola, acreditamos que toda grande experiência começa com um gesto delicado. Nossas entradas
+                    são uma homenagem à simplicidade da cozinha italiana — com ingredientes frescos, aromas que
+                    despertam memórias e sabores que abrem o apetite para algo maior. Cada mordida é um convite para o
+                    que está por vir.</p>
                 <ul>
-                     <li><strong>Terça a Sexta:</strong> 18h às 23h</li>
-                     <li><strong>Sábados:</strong> 12h às 23h</li>
-                     <li><strong>Domingos:</strong> 12h às 17h</li>
+                    <li>Bruschetta clássica com tomate e manjericão — R$18</li>
+                    <li>Carpaccio de carne com rúcula e parmesão — R$32</li>
                 </ul>
-            
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d480046.1771548376!2d-44.59594194329667!3d-19.95132505251119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa68507cf3c19d5%3A0x5e49daeb5bbc1b89!2sBurger%20King%20%7C%20Drive%20Thru!5e0!3m2!1spt-BR!2sbr!4v1744593584230!5m2!1spt-BR!2sbr" width="320" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-   </main>
-   <footer>
-        <h1>aaaaaaaaaaa</h1>
-   </footer> 
+            </div>
+        </div>
+        <div class="menu" id="principal">
+            <div class="conteudo">
+                <img src="imagens/keriliwi-cnlniMp2ww4-unsplash.jpg" alt="">
+                <h3>A essência da nossa cozinha</h3>
+                <p>Os pratos principais são o coração da nossa casa. Inspirados nas receitas tradicionais da Itália,
+                    trazem à mesa o equilíbrio entre técnica, história e afeto. Do risoto cremoso ao filé suculento com
+                    toque de vinho, cada prato é cuidadosamente elaborado para ser o ponto alto da sua noite.</p>
+                <ul>
+                    <li>Risoto de cogumelos trufados — R$52</li>
+                    <li>Filé ao molho de vinho com purê de batata — R$68</li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu" id="sobremesa">
+            <div class="conteudo">
+                <img src="imagens/pushpak-dsilva-2UeBOL7UD34-unsplash.jpg" alt="">
+                <h3>Um doce final com alma</h3>
+                <p>Nossas sobremesas foram pensadas para deixar uma marca doce na sua memória. Feitas com carinho,
+                    trazem aquele toque de conforto que só um verdadeiro final feliz pode oferecer. De clássicos como o
+                    tiramisu até criações mais delicadas, aqui o prazer está nos detalhes.</p>
+                <ul>
+                    <li>Panna Cotta com calda de frutas vermelhas — R$24</li>
+                    <li>Tiramisu tradicional — R$26</li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu" id="bebida">
+            <div class="conteudo">
+                <img src="imagens/no-revisions-gA81ZTsql68-unsplash.jpg" alt="">
+                <h3>Brindes à boa companhia</h3>
+                <p>A carta de bebidas do La Tavola é mais do que um complemento: é uma celebração. Vinhos selecionados,
+                    sucos naturais e rótulos que harmonizam com nossos pratos fazem parte de uma experiência pensada
+                    para brindar os bons momentos — com sabor, leveza e autenticidade.</p>
+                <ul>
+                    <li>Vinho tinto da casa — R$18 (taça)</li>
+                    <li>Suco natural de frutas — R$12</li>
+                </ul>
+            </div>
+        </div>
+        <h2 id="contato">Contato / Localização</h2>
+
+        <h3>
+            📍Endereço
+            Rua Gastronômica, 123 — Bairro Gourmet, São Paulo — SP</h3>
+
+        <h4>Reservas</h4>
+        <p id="localizacao">
+            (11) 98765-4321 <br>
+            contato@latavola.com.br
+        </p>
+
+        <h3 id="horario">Horário de Funcionamento</h3>
+        <ul>
+            <li><strong>Terça a Sexta:</strong> 18h às 23h</li>
+            <li><strong>Sábados:</strong> 12h às 23h</li>
+            <li><strong>Domingos:</strong> 12h às 17h</li>
+        </ul>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d480046.1771548376!2d-44.59594194329667!3d-19.95132505251119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa68507cf3c19d5%3A0x5e49daeb5bbc1b89!2sBurger%20King%20%7C%20Drive%20Thru!5e0!3m2!1spt-BR!2sbr!4v1744593584230!5m2!1spt-BR!2sbr"
+            width="320" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </main>
+    <footer>
+        <h1>Sobre Nós</h1>
+        <div id="footerdiv"><img src="imagens/sebastian-coman-photography-cQbOSRpElxw-unsplash.jpg" alt="">
+            <p>Fundado em 2015, o La Tavola nasceu da paixão pela culinária italiana e pela arte de bem receber.
+                Nossos pratos são preparados com ingredientes frescos e selecionados, respeitando a tradição e valorizando o sabor.
+                
+                Nosso chef, Marco Bellini, traz mais de 20 anos de experiência internacional, unindo técnicas clássicas a toques contemporâneos para surpreender seu paladar.
+                </p>
+        </div>
+    </footer>
 </body>
+
 </html>
