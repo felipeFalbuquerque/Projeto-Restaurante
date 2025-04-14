@@ -36,6 +36,7 @@
         header{
             padding: 20px;
             background-color: var(--cor4);
+            min-width: 320px;
         }
         header h1{
             font-family: var(--fontetitulo);
@@ -44,29 +45,26 @@
         }
         header p {
             text-align: center;
-            width: 500px;
+            min-width: 320px;
             display: block;
             margin: auto;
         }
         p{
             font-family: var(--fonteconteudo);
             font-weight: 600;
-            color: rgb(255, 0, 0);
+            color: white
         }
         main{
             background-color: white;
             padding: 20px;
+            margin: 5px;
+            border-radius: 10px;
         }
         h2{
             font-family: var(--fontetitulo);
             padding: 1px;
             text-align: center;
             padding-bottom: 20px;
-        }
-        .menu{
-            display: inline;
-            width: 4000px;
-            
         }
         footer{
             background-color: var(--cor4);
@@ -81,26 +79,40 @@
         }
         .conteudo p{
             display: none;
-            width: 320px;
+            min-width: 320px;
         }
         .conteudo:hover{
-            min-width: 320px;
+            width: 99%;
             background-color: var(--cor3);
             border-radius: 30px;
-            transition:  .3s;
+            transition:  .6s;
+            height: 98%;
+            position: relative;
+            left: -2.8%;
         }
         .conteudo:hover p{
             display: block;
             position: relative;
-            margin: auto;
-            top: -90%;
-            left: -10%;
+
+            text-align: center;
+            min-width: 320px;
+
+        }
+        #entrada{
+            height: 10%;
         }
         .conteudo{
             height: 450px;
             padding: 10px;
-        }
 
+        }
+        #contato{
+            padding: 20px;
+        }
+        
+        iframe{
+            border-radius: 20px;
+        }
     </style>
 </head>
 <body>
@@ -138,7 +150,8 @@
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In tenetur omnis ut repellat quas optio reiciendis fuga voluptatibus ea ullam, distinctio quo expedita debitis esse vel, vitae rerum, nisi repudiandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odit totam saepe enim delectus et tenetur consequatur quaerat, facilis quia ut qui animi debitis architecto beatae autem temporibus facere! Soluta. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur dolorum sed quaerat dolor, alias animi dolorem incidunt fugiat! Quas illo ut rerum explicabo praesentium nostrum? Consequatur nobis neque debitis expedita!</p>
                 </div>
             </div>
-            <h2>Contato / Localização</h2>
+            <h2 id="contato">Contato / Localização</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d480046.1771548376!2d-44.59594194329667!3d-19.95132505251119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa68507cf3c19d5%3A0x5e49daeb5bbc1b89!2sBurger%20King%20%7C%20Drive%20Thru!5e0!3m2!1spt-BR!2sbr!4v1744593584230!5m2!1spt-BR!2sbr" width="320" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
    </main>
    <footer>
         <h1>aaaaaaaaaaa</h1>
