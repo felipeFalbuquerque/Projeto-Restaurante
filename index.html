@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto-Restaurante</title>
+    <link rel="shortcut icon" href="imagens/restaurant.png" type="image/x-icon">
+    <style>
+        @font-face {
+            font-family:'Poppins' ;
+            src: url(fontes/Poppins-Medium.ttf);}
+        @font-face {
+            font-family: 'Quicksand'; 
+            src: url(fontes/Quicksand-VariableFont_wght.ttf);}
+        @font-face {
+            font-family: 'Raleway';
+            src: url(fontes/Raleway-VariableFont_wght.ttf); }
+        
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        :root{
+            --cor1:#4B2E2B;
+            --cor2:#F5F5DC;
+            --cor3:#C5A880;
+            --cor4:#333333;
+
+            --fontetitulo:'Poppins';
+            --fontetitulosmenores:'Quicksand';
+            --fonteconteudo:'Raleway';
+        }
+        body{
+            background-color: var(--cor3);
+        }
+        header{
+            padding: 20px;
+            background-color: var(--cor4);
+        }
+        header h1{
+            font-family: var(--fontetitulo);
+            text-align: center;
+            color: white;
+        }
+        header p {
+            text-align: center;
+            width: 500px;
+            display: block;
+            margin: auto;
+        }
+        p{
+            font-family: var(--fonteconteudo);
+            font-weight: 600;
+            color: rgb(255, 0, 0);
+        }
+        main{
+            background-color: white;
+            padding: 20px;
+        }
+        h2{
+            font-family: var(--fontetitulo);
+            padding: 1px;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .menu{
+            display: inline;
+            width: 4000px;
+            
+        }
+        footer{
+            background-color: var(--cor4);
+            color: white;
+        }
+        img{
+            position: relative;
+            width: 300px;
+            border-radius: 30px;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .conteudo p{
+            display: none;
+            width: 320px;
+        }
+        .conteudo:hover{
+            min-width: 320px;
+            background-color: var(--cor3);
+            border-radius: 30px;
+            transition:  .3s;
+        }
+        .conteudo:hover p{
+            display: block;
+            position: relative;
+            margin: auto;
+            top: -90%;
+            left: -10%;
+        }
+        .conteudo{
+            height: 450px;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+   <header>
+        <h1>La Tavola</h1>
+        <p>Sabores autênticos, ingredientes frescos e uma experiência inesquecível. Descubra o melhor da gastronomia em um ambiente elegante e acolhedor</p>
+        <nav>
+
+        </nav>
+   </header>
+   <main>
+        <h2>Conheça nosso Cardápio</h2>
+
+            <div class="menu" id="entrada">
+                <div class="conteudo">
+                    <img src="imagens/jose-hernandez-DgWOKBVuMTQ-unsplash.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In tenetur omnis ut repellat quas optio reiciendis fuga voluptatibus ea ullam, distinctio quo expedita debitis esse vel, vitae rerum, nisi repudiandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odit totam saepe enim delectus et tenetur consequatur quaerat, facilis quia ut qui animi debitis architecto beatae autem temporibus facere! Soluta. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur dolorum sed quaerat dolor, alias animi dolorem incidunt fugiat! Quas illo ut rerum explicabo praesentium nostrum? Consequatur nobis neque debitis expedita!</p>
+                </div>
+            </div>
+            <div class="menu" id="principal">
+                <div class="conteudo">
+                    <img src="imagens/keriliwi-cnlniMp2ww4-unsplash.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In tenetur omnis ut repellat quas optio reiciendis fuga voluptatibus ea ullam, distinctio quo expedita debitis esse vel, vitae rerum, nisi repudiandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odit totam saepe enim delectus et tenetur consequatur quaerat, facilis quia ut qui animi debitis architecto beatae autem temporibus facere! Soluta. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur dolorum sed quaerat dolor, alias animi dolorem incidunt fugiat! Quas illo ut rerum explicabo praesentium nostrum? Consequatur nobis neque debitis expedita!</p>
+                </div>
+            </div>
+            <div class="menu" id="sobremesa">
+                <div class="conteudo">
+                    <img src="imagens/pushpak-dsilva-2UeBOL7UD34-unsplash.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In tenetur omnis ut repellat quas optio reiciendis fuga voluptatibus ea ullam, distinctio quo expedita debitis esse vel, vitae rerum, nisi repudiandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odit totam saepe enim delectus et tenetur consequatur quaerat, facilis quia ut qui animi debitis architecto beatae autem temporibus facere! Soluta. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur dolorum sed quaerat dolor, alias animi dolorem incidunt fugiat! Quas illo ut rerum explicabo praesentium nostrum? Consequatur nobis neque debitis expedita!</p>
+                </div>
+            </div>
+            <div class="menu" id="bebida">
+                <div class="conteudo">
+                    <img src="imagens/no-revisions-gA81ZTsql68-unsplash.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In tenetur omnis ut repellat quas optio reiciendis fuga voluptatibus ea ullam, distinctio quo expedita debitis esse vel, vitae rerum, nisi repudiandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odit totam saepe enim delectus et tenetur consequatur quaerat, facilis quia ut qui animi debitis architecto beatae autem temporibus facere! Soluta. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur dolorum sed quaerat dolor, alias animi dolorem incidunt fugiat! Quas illo ut rerum explicabo praesentium nostrum? Consequatur nobis neque debitis expedita!</p>
+                </div>
+            </div>
+            <h2>Contato / Localização</h2>
+   </main>
+   <footer>
+        <h1>aaaaaaaaaaa</h1>
+   </footer> 
+</body>
+</html>
